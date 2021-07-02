@@ -71,8 +71,7 @@ public class ClientService {
         .build();
   }
 
-  public List<ClientDataResponseDTO>
-  getClientsData() {
+  public List<ClientDataResponseDTO> getClientsData() {
     List<Client> clients = clientRepository.findAll();
     int ageAverage = calculateAgeAverage(getAges(clients));
 

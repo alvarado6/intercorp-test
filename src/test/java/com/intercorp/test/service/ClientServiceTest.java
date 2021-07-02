@@ -2,21 +2,14 @@ package com.intercorp.test.service;
 
 import com.intercorp.test.entity.Client;
 import com.intercorp.test.repository.ClientRepository;
-import com.intercorp.test.util.dtos.client.KpiClientsResponseDTO;
 import com.intercorp.test.util.exceptions.IntercorpExceptions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.intercorp.test.provider.ClientProvider.createDummyClientRequestDTO;
-import static com.intercorp.test.provider.ClientProvider.createDummyKpiClientsResponseDTO;
-import static com.intercorp.test.service.ClientService.calculateAgeAverage;
-import static com.intercorp.test.service.ClientService.calculateStandardDeviation;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -44,5 +37,4 @@ class ClientServiceTest {
     assertNotNull(
         when(clientService.createClient(createDummyClientRequestDTO())).thenReturn(client));
   }
-
 }

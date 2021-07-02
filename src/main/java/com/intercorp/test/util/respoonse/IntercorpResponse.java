@@ -7,9 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class IntercorpResponse<T> {
 
-    private String status;
-    private String code;
-    private String message;
-    private T data;
-
+  private String status;
+  private String code;
+  private String message;
+  private T data;
 }

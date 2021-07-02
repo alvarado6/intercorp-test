@@ -9,9 +9,8 @@ import java.util.Date;
 @Builder
 public class ClientRequestDTO {
 
-    private String name;
-    private String lastName;
-    private int age;
-    private Date birthDate;
-
+  private String name;
+  private String lastName;
+  private int age;
+  private Date birthDate;
 }

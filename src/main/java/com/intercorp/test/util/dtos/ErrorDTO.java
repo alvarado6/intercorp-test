@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class ErrorDTO {
 
-    private String name;
-    private String value;
+  private String name;
+  private String value;
 }

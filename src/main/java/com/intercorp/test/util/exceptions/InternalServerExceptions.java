@@ -7,11 +7,11 @@ import java.util.Arrays;
 
 public class InternalServerExceptions extends IntercorpExceptions {
 
-    public InternalServerExceptions(final String code, final String message) {
-        super(code, HttpStatus.INTERNAL_SERVER_ERROR.value(), message);
-    }
-    public InternalServerExceptions(final String code, final String message, ErrorDTO data) {
-        super(code, HttpStatus.INTERNAL_SERVER_ERROR.value(), message, Arrays.asList(data));
-    }
+  public InternalServerExceptions(final String code, final String message) {
+    super(code, HttpStatus.INTERNAL_SERVER_ERROR.value(), message);
+  }
 
+  public InternalServerExceptions(final String code, final String message, ErrorDTO data) {
+    super(code, HttpStatus.INTERNAL_SERVER_ERROR.value(), message, Arrays.asList(data));
+  }
 }
